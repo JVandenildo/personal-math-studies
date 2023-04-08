@@ -20,7 +20,7 @@ def bloody(a, b):
                 i = a
                 r = r + 1
 
-    return print(f'{a} rooted by {b} is {r}.')
+    return r
 
 # only works with perfect roots
-bloody(a, b)
+print(f'Root of {a} by {b} is {bloody(a, b)}.')

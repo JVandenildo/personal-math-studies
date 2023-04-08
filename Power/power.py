@@ -1,14 +1,14 @@
-a = int(input("Base number: "))
-b = int(input("Power number: "))
+a = int(input("Base: "))
+n = int(input("Exponent: "))
 
-def power(a, b):
+def power(a, n):
     count = 1
     p = a
 
-    while count < b:
+    while count < n:
         p = p * a
         count+=1
     
-    return print(p)
+    return p
 
-power(a, b)
+print(f'{a} raised to the power of {n} is {power(a, n)}.')

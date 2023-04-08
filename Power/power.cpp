@@ -1,26 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int power(int a, int b){
-    cout << "Base number: " << "\n";
+int main(){
+    int a;
+    cout << "Base: ";
     cin >> a;
-    cout << "Power number: " << "\n";
-    cin >> b;
-
+    int n;
+    cout << "Exponent: ";
+    cin >> n;
     int count = 1;
     int p = a;
 
-    while (count < b)
-    {
+    while (count < n) {
         p = p * a;
         count+=1;
     }
-    
-    return p;
-}
-
-int main(){
-    cout << power << ".\n";
+    cout << a << " raised to the power of " << n << " is " << p << ".\n";
     
     return 0;
 }
