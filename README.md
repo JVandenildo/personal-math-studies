@@ -16,8 +16,11 @@ The list of operations so far is:
 - Root;
 - Logarithm;
 - Least Common Multiple;
-- Greatest Common Factor.
+- Greatest Common Factor;
+- Factorial.
 
 ## Updates  
 
-I'm considering update this project with others languages, like python and JavaScript.
+- Common used operations update (squared root and logarithm of base 10, for instance).  
+    Since they are common use of these operations, sounds like a nice update to do.  
+- Take a nap.
