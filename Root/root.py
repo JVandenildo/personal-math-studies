@@ -1,7 +1,4 @@
-a = int(input("Base number: "))
-b = int(input("Root number: "))
-
-def bloody(a, b):
+def root(a, b):
     array = []
     r = 2
     i = a
@@ -23,4 +20,7 @@ def bloody(a, b):
     return r
 
 # only works with perfect roots
-print(f'Root of {a} by {b} is {bloody(a, b)}.')
+a = int(input("Base number: "))
+b = int(input("Root number: "))
+
+print(f'Root of {a} by {b} is {root(a, b)}.')

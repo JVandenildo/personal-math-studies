@@ -1,5 +1,3 @@
-number = int(input("Factorial of: "))
-
 def factorial(number):
     i = 1
     result = 1
@@ -9,5 +7,7 @@ def factorial(number):
         i += 1
     
     return result
+
+number = int(input("Factorial of: "))
 
 print(f'The factorial of {number} is {factorial(number)}.')

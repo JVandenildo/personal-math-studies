@@ -1,13 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    int a;
-    cout << "Base: ";
-    cin >> a;
-    int n;
-    cout << "Exponent: ";
-    cin >> n;
+int power(int a, int n){
     int count = 1;
     int p = a;
 
@@ -15,7 +9,18 @@ int main(){
         p = p * a;
         count+=1;
     }
-    cout << a << " raised to the power of " << n << " is " << p << ".\n";
     
-    return 0;
+    return p;
 }
+
+/* int main(){
+    int a, n;
+    cout << "Base: ";
+    cin >> a;
+    cout << "Exponent: ";
+    cin >> n;
+    
+    cout << a << " raised to the power of " << n << " is " << power(a, n) << ".\n";
+
+    return 0;
+} */
