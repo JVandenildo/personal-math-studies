@@ -7,6 +7,7 @@ def GreatestCommonDivisor(a, b):
             DivisorA = a / factor
             DivisorsA.append(DivisorA)
         factor = factor + 1
+    print(f'Divisors of a: {DivisorsA}.')
     factor = 1 # factor gets here being bigger than 1, so we must reassign it to 1
     DivisorsB = []
     while factor <= b:
@@ -14,6 +15,7 @@ def GreatestCommonDivisor(a, b):
             DivisorB = b / factor
             DivisorsB.append(DivisorB)
         factor = factor + 1
+    print(f'Divisors of b: {DivisorsB}.')
 
     if len(DivisorsB) <= len(DivisorsA):
         for i in DivisorsB:
