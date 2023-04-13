@@ -1,26 +1,25 @@
-def root(a, b):
-    array = []
-    r = 2
-    i = a
+def root(base, b):
+    r = 1
 
-    while i > 1:
-        if i % r == 0:
-            array.append(r)
-            i = i / r
+    while r != base:
+        p = r
+        count = 1
 
+        while count < b:
+            p = p * r
+            count+=1
+            if p == base:
+                return r
+
+        if r == base:
+            return r
         else:
-            array = []
-            i = a
             r = r + 1
-
-            if i == 1 and len(array) != b:
-                i = a
-                r = r + 1
-
+    
     return r
 
-# only works with perfect roots
-a = int(input("Base number: "))
+base = int(input("Base number: "))
 b = int(input("Root number: "))
 
-print(f'Root of {a} by {b} is {root(a, b)}.')
+# some combinations doesn't return the correct result; be aware
+print(f'Root of {base} by {b} is {root(base, b)}.')
