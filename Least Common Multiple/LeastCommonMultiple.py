@@ -12,15 +12,18 @@ def LeastCommonMultiple(a, b):
 
         multipleA = a * factor
         multiplesA.append(multipleA)
-    print(f'Multiples of a: {multiplesA}.')
+    print(f'Multiples of a: {multiplesA}.') # all multiples of a got for later comparison
+
     factor = 1 # factor gets here being bigger than 1, so we must reassign it to 1
     while multiplesB[len(multiplesB) - 1] < CommonMultiple:
         factor = factor + 1
 
         multipleB = b * factor
         multiplesB.append(multipleB)
-    print(f'Multiples of b: {multiplesB}.')
+    print(f'Multiples of b: {multiplesB}.') # all multiples of b got for later comparison
     
+    # comparing multiples of each argument
+    # an array may be bigger than the other, so to avoid error the 'if/else statement' comes
     if len(multiplesB) <= len(multiplesA):
         for i in multiplesB:
             for e in multiplesA:
