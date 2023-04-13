@@ -26,8 +26,8 @@ def LeastCommonMultiple(a, b):
                     return i
 
     else:
-        for i in multiplesB:
-            for e in multiplesA:
+        for i in multiplesA:
+            for e in multiplesB:
                 if i == e:
                     return i
 
