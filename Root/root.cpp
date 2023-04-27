@@ -33,7 +33,7 @@ string root(int base, int b){
     return answer;
 }
 
-int main(){
+/*int main(){
     int base, b;
     cout << "Base number: ";
     cin >> base;
@@ -45,4 +45,4 @@ int main(){
     cout << "Root of " << base << " by " << b << " is " << root(base, b) << ".\n";
 
     return 0;
-}
+}*/

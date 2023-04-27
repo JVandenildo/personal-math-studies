@@ -39,4 +39,5 @@ def LeastCommonMultiple(a, b):
 a = int(input("a: "))
 b = int(input("b: "))
 
+# for testing try those: 13, 7 (91)
 print(LeastCommonMultiple(a, b))
