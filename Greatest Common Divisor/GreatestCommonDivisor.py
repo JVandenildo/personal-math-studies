@@ -35,4 +35,5 @@ def GreatestCommonDivisor(a, b):
 a = int(input("a: "))
 b = int(input("b: "))
 
+# for testing use those: 8, 12 (4); 13, 7 (1)
 print(f'The greatest common divisor of {a} and {b} is {GreatestCommonDivisor(a, b)}.')

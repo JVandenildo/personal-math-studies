@@ -39,5 +39,5 @@ def LeastCommonMultiple(a, b):
 a = int(input("a: "))
 b = int(input("b: "))
 
-# for testing try those: 13, 7 (91)
-print(LeastCommonMultiple(a, b))
+# for testing try those: 13, 7 (91); 92, 1024 (23552)
+print(f'The least common multiple between {a} and {b} is {LeastCommonMultiple(a, b)}.')
