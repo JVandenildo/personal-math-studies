@@ -14,7 +14,7 @@ The list of operations I have intention of make functions, or currently making:
 - Power;  
     Done. But only works with integers.  
 - Root;  
-    Made it, but only works with exact roots (squared root of 4 or cubic root of 64, for example). And some other results may be wrong.  
+    Made it, but only works with exact roots (squared root of 4 or cubic root of 64, for example). And some results may be wrong.  
 - Logarithm;  
     I have no idea how to make it. Just saying.  
 - Least Common Multiple;  
