@@ -1,11 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int factorial(int number){
+int factorial(int number)
+{
     int i = 1;
     int result = 1;
 
-    while (number >= i){
+    while (number >= i)
+    {
         result = result * i;
         i += 1;
     }

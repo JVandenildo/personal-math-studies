@@ -1,15 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int power(int a, int n){
+int power(int a, int n)
+{
     int count = 1;
     int p = a;
 
-    while (count < n) {
+    while (count < n)
+    {
         p = p * a;
-        count+=1;
+        count += 1;
     }
-    
+
     return p;
 }
 
@@ -19,7 +21,7 @@ int power(int a, int n){
     cin >> a;
     cout << "Exponent: ";
     cin >> n;
-    
+
     cout << a << " raised to the power of " << n << " is " << power(a, n) << ".\n";
 
     return 0;

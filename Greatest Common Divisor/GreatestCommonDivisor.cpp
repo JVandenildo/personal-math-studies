@@ -2,11 +2,14 @@
 #include <vector>
 using namespace std;
 
-int GreatestCommonDivisor(int a, int b){
+int GreatestCommonDivisor(int a, int b)
+{
     int factorA = 1;
     vector<int> DivisorsA;
-    while(factorA <= a){
-        if(a % factorA == 0){
+    while (factorA <= a)
+    {
+        if (a % factorA == 0)
+        {
             int DivisorA = a / factorA;
             DivisorsA.push_back(DivisorA);
         }
@@ -15,8 +18,10 @@ int GreatestCommonDivisor(int a, int b){
 
     int factorB = 1;
     vector<int> DivisorsB;
-    while(factorB <= b){
-        if(b % factorB == 0){
+    while (factorB <= b)
+    {
+        if (b % factorB == 0)
+        {
             int DivisorB = b / factorB;
             DivisorsB.push_back(DivisorB);
         }
@@ -25,19 +30,27 @@ int GreatestCommonDivisor(int a, int b){
 
     /* Comparing divisors of each argument
     an array may be bigger than the other, so to avoid error the 'if/else statement' comes */
-    if(DivisorsB.size() <= DivisorsA.size()){
-        for(int i: DivisorsB){
-            for(int e: DivisorsA){
-                if(i == e){
+    if (DivisorsB.size() <= DivisorsA.size())
+    {
+        for (int i : DivisorsB)
+        {
+            for (int e : DivisorsA)
+            {
+                if (i == e)
+                {
                     return i;
                 }
             }
         }
     }
-    else{
-        for(int i: DivisorsA){
-            for(int e: DivisorsB){
-                if(i == e){
+    else
+    {
+        for (int i : DivisorsA)
+        {
+            for (int e : DivisorsB)
+            {
+                if (i == e)
+                {
                     return i;
                 }
             }
@@ -45,7 +58,7 @@ int GreatestCommonDivisor(int a, int b){
     }
 }
 
-int main(){
+/*int main(){
     int a, b;
     cout << "a: ";
     cin >> a;
@@ -56,4 +69,4 @@ int main(){
     cout << "The greatest common divisor of " << a << " and " << b << " is " << GreatestCommonDivisor(a, b) << ".\n";
 
     return 0;
-}
+}*/

@@ -1,21 +1,25 @@
 #include <iostream>
 using namespace std;
 
-string root(int base, int b){
+string root(int base, int b)
+{
     int r = 1;
     int p;
     int count;
     string answer;
 
-    while(r != base){
+    while (r != base)
+    {
         p = r;
         count = 1;
 
-        while(count < b){
+        while (count < b)
+        {
             p = p * r;
             count += 1;
 
-            if(p == base && count == b){
+            if (p == base && count == b)
+            {
                 answer = to_string(r);
 
                 return answer;
@@ -23,10 +27,12 @@ string root(int base, int b){
         }
         r = r + 1;
     }
-    if(p == base && count == b){
+    if (p == base && count == b)
+    {
         answer = to_string(r);
     }
-    else{
+    else
+    {
         answer = "not an integer";
     }
 

@@ -7,16 +7,16 @@ def GreatestCommonDivisor(a, b):
             DivisorA = a / factor
             DivisorsA.append(DivisorA)
         factor = factor + 1
-    print(f'Divisors of a: {DivisorsA}.')
-    
-    factor = 1 # factor gets here being bigger than 1, so we must reassign it to 1
+    print(f"Divisors of a: {DivisorsA}.")
+
+    factor = 1  # factor gets here being bigger than 1, so we must reassign it to 1
     DivisorsB = []
     while factor <= b:
         if b % factor == 0:
             DivisorB = b / factor
             DivisorsB.append(DivisorB)
         factor = factor + 1
-    print(f'Divisors of b: {DivisorsB}.')
+    print(f"Divisors of b: {DivisorsB}.")
 
     # comparing divisors of each argument
     # an array may be bigger than the other, so to avoid error the 'if/else statement' comes
@@ -32,8 +32,9 @@ def GreatestCommonDivisor(a, b):
                 if i == e:
                     return i
 
+
 a = int(input("a: "))
 b = int(input("b: "))
 
 # for testing use those: 8, 12 (4); 13, 7 (1)
-print(f'The greatest common divisor of {a} and {b} is {GreatestCommonDivisor(a, b)}.')
+print(f"The greatest common divisor of {a} and {b} is {GreatestCommonDivisor(a, b)}.")
