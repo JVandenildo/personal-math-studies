@@ -51,3 +51,6 @@ if checkMode(lst):
     print(f"Scipy median: {stats.mode(lst)}.")
 else:
     print("There's no mode.")
+
+    # result by scipy method for comparison
+    print(f"Scipy median: {stats.mode(lst)}.")
