@@ -1,12 +1,11 @@
 #include <iostream>
-using namespace std;
 
-string root(int base, int b)
+std::string root(int base, int b)
 {
     int r = 1;
     int p;
     int count;
-    string answer;
+    std::string answer;
 
     while (r != base)
     {
@@ -20,7 +19,7 @@ string root(int base, int b)
 
             if (p == base && count == b)
             {
-                answer = to_string(r);
+                answer = std::to_string(r);
 
                 return answer;
             }
@@ -29,7 +28,7 @@ string root(int base, int b)
     }
     if (p == base && count == b)
     {
-        answer = to_string(r);
+        answer = std::to_string(r);
     }
     else
     {
@@ -39,16 +38,19 @@ string root(int base, int b)
     return answer;
 }
 
-/*int main(){
-    int base, b;
-    cout << "Base number: ";
-    cin >> base;
-    cout << "Root number: ";
-    cin >> b;
+// int main()
+// {
+//     int base, b;
+//     std::cout << "Base number: ";
+//     std::cin >> base;
+//     std::cout << "Root number: ";
+//     std::cin >> b;
 
-    // some combinations doesn't return the correct result; be aware
-    // for testing, try these combinations: 25, 5; 8, 3; 1728, 3 (is 12)
-    cout << "Root of " << base << " by " << b << " is " << root(base, b) << ".\n";
+//     /*
+//         some combinations doesn't return the correct result; be aware
+//         for testing, try these combinations: 25, 5; 8, 3; 1728, 3 (is 12)
+//     */
+//     std::cout << "Root of " << base << " by " << b << " is " << root(base, b) << ".\n";
 
-    return 0;
-}*/
+//     return 0;
+// }

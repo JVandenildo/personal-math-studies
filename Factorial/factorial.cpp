@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 int factorial(int number)
 {
@@ -15,12 +14,13 @@ int factorial(int number)
     return result;
 }
 
-/*int main(){
+/*int main()
+{
     int number;
-    cout << "Number: ";
-    cin >> number;
+    std::cout << "Number: ";
+    std::cin >> number;
 
-    cout << "The factorial of " << number << " is " << factorial(number) << ".\n";
+    std::cout << "The factorial of " << number << " is " << factorial(number) << ".\n";
 
     return 0;
 }*/

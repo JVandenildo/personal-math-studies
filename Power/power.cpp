@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 int power(int a, int n)
 {
@@ -15,14 +14,15 @@ int power(int a, int n)
     return p;
 }
 
-/* int main(){
+/*int main()
+{
     int a, n;
-    cout << "Base: ";
-    cin >> a;
-    cout << "Exponent: ";
-    cin >> n;
+    std::cout << "Base: ";
+    std::cin >> a;
+    std::cout << "Exponent: ";
+    std::cin >> n;
 
-    cout << a << " raised to the power of " << n << " is " << power(a, n) << ".\n";
+    std::cout << a << " raised to the power of " << n << " is " << power(a, n) << ".\n";
 
     return 0;
-} */
+}*/
