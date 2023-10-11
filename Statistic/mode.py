@@ -1,3 +1,5 @@
+# mode is the most repeating value ina set of data values
+
 import random as rd
 from scipy import stats
 
@@ -8,7 +10,6 @@ def checkMode(array):
     for i in array:
         countJ = 0
 
-        # print(i)
         for e in array:
             if i == e:
                 countJ = countJ + 1
