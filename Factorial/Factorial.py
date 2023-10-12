@@ -9,6 +9,16 @@ def factorial(number):
     return result
 
 
+# recursive
+def factorialRecursive(number):
+    if number == 0:
+        return 1
+    else:
+        return number * factorialRecursive(number - 1)
+
+
 number = int(input("Factorial of: "))
 
-print(f"The factorial of {number} is {factorial(number)}.")
+# comparing results
+print(f"The factorial of {number} is {factorial(number)}. (NON RECURSIVE)")
+print(f"The factorial of {number} is {factorialRecursive(number)}. (RECURSIVE)")
