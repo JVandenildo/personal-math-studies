@@ -14,13 +14,27 @@ int factorial(int number)
     return result;
 }
 
-/*int main()
+int factorialRecursive(int number)
+{
+    if (number == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return number * factorial(number - 1);
+    }
+}
+
+int main()
 {
     int number;
-    std::cout << "Number: ";
+    std::cout << "Factorial of: ";
     std::cin >> number;
 
-    std::cout << "The factorial of " << number << " is " << factorial(number) << ".\n";
+    // comparing results
+    std::cout << "The factorial of " << number << " is " << factorial(number) << ". (NON RECURSIVE)\n";
+    std::cout << "The factorial of " << number << " is " << factorialRecursive(number) << ". (RECURSIVE)\n";
 
     return 0;
-}*/
+}

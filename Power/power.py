@@ -21,5 +21,5 @@ a = int(input("Base: "))
 n = int(input("Exponent: "))
 
 # comparing results
-print(f"{a} raised to the power of {n} is {power(a, n)}. (NON RECURSIVE)")
-print(f"{a} raised to the power of {n} is {powerRecursive(a, n)}. (RECURSIVE)")
+print(f"{a} raised to the power of {n} is {power(a, n)}. (NON RECURSIVE)\n")
+print(f"{a} raised to the power of {n} is {powerRecursive(a, n)}. (RECURSIVE)\n")

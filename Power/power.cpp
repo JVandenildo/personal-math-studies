@@ -35,8 +35,8 @@ int main()
     std::cin >> n;
 
     // comparing results
-    std::cout << a << " raised to the power of " << n << " is " << power(a, n) << " (NON RECURSIVE).\n";
-    std::cout << a << " raised to the power of " << n << " is " << powerRecursive(a, n) << " (RECURSIVE).\n";
+    std::cout << a << " raised to the power of " << n << " is " << power(a, n) << ". (NON RECURSIVE)\n";
+    std::cout << a << " raised to the power of " << n << " is " << powerRecursive(a, n) << ". (RECURSIVE)\n";
 
     return 0;
 }
