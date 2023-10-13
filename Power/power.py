@@ -23,3 +23,5 @@ n = int(input("Exponent: "))
 # comparing results
 print(f"{a} raised to the power of {n} is {power(a, n)}. (NON RECURSIVE)\n")
 print(f"{a} raised to the power of {n} is {powerRecursive(a, n)}. (RECURSIVE)\n")
+# result with native python function
+print(f"{a} raised to the power of {n} is {pow(a, n)}. (PYTHON)\n")
