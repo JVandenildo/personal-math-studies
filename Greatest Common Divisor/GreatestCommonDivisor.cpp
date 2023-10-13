@@ -27,8 +27,10 @@ int GreatestCommonDivisor(int a, int b)
         factorB = factorB + 1;
     }
 
-    /* Comparing divisors of each argument
-    an array may be bigger than the other, so to avoid error the 'if/else statement' comes */
+    /*
+        Comparing divisors of each argument
+        an array may be bigger than the other, so to avoid error the 'if/else statement' comes
+    */
     if (DivisorsB.size() <= DivisorsA.size())
     {
         for (int i : DivisorsB)

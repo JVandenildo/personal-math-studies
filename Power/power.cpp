@@ -26,7 +26,7 @@ int powerRecursive(int a, int n)
     }
 }
 
-int main()
+/*int main()
 {
     int a, n;
     std::cout << "Base: ";
@@ -39,4 +39,4 @@ int main()
     std::cout << a << " raised to the power of " << n << " is " << powerRecursive(a, n) << ". (RECURSIVE)\n";
 
     return 0;
-}
+}*/

@@ -26,7 +26,7 @@ int factorialRecursive(int number)
     }
 }
 
-int main()
+/*int main()
 {
     int number;
     std::cout << "Factorial of: ";
@@ -37,4 +37,4 @@ int main()
     std::cout << "The factorial of " << number << " is " << factorialRecursive(number) << ". (RECURSIVE)\n";
 
     return 0;
-}
+}*/

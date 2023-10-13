@@ -28,8 +28,10 @@ int LeastCommonMultiple(int a, int b)
     }
     std::cout << "Size of B " << multiplesB.size() << std::endl;
 
-    /* comparing multiples of each argument
-    an array may be bigger the other, so to avoid error the 'if/else statement' comes*/
+    /*
+        comparing multiples of each argument
+        an array may be bigger the other, so to avoid error the 'if/else statement' comes
+    */
     if (multiplesB.size() <= multiplesB.size())
     {
         for (int i : multiplesB)
