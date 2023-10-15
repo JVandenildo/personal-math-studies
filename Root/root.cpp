@@ -26,16 +26,15 @@ std::string root(int base, int b)
         }
         r = r + 1;
     }
+
     if (p == base && count == b)
     {
-        answer = std::to_string(r);
+        return std::to_string(r);
     }
     else
     {
-        answer = "not an integer";
+        return "not an integer";
     }
-
-    return answer;
 }
 
 // int main()
