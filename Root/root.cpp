@@ -19,9 +19,7 @@ std::string root(int base, int b)
 
             if (p == base && count == b)
             {
-                answer = std::to_string(r);
-
-                return answer;
+                return std::to_string(r);
             }
         }
         r = r + 1;
