@@ -10,7 +10,7 @@ def factorial(number):
 
 
 # recursive
-def factorialRecursive(number):
+def factorialRecursive(number: int) -> int:
     if number == 0:
         return 1
     else:
