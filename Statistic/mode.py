@@ -45,13 +45,14 @@ def modeOfLst(array: list) -> float:
 lst = [rd.randint(1, 100) for x in range(rd.randint(5, 15))]
 
 if checkMode(lst):
+    # result got by scipy method
+    print(f"Scipy median: {stats.mode(lst)}.")
+
     # result by function
     print(f"List: {lst};\nLength: {len(lst)};\nMean: {modeOfLst(lst)}.")
 
-    # result got by scipy method
-    print(f"Scipy median: {stats.mode(lst)}.")
 else:
-    print("There's no mode.")
-
     # result got by scipy method
     print(f"Scipy median: {stats.mode(lst)}.")
+
+    print("There's no mode.")
