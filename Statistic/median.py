@@ -7,19 +7,21 @@ import numpy as np
 
 
 def medianOfLst(array: list) -> float:
-    if len(array) % 2 == 0:  # array length is even
-        while len(array) > 2:
-            array.remove(max(array))
-            array.remove(min(array))
+    arrayCopy = array.copy()
 
-        return (array[0] + array[1]) / 2
+    if len(arrayCopy) % 2 == 0:  # arrayCopy length is even
+        while len(arrayCopy) > 2:
+            arrayCopy.remove(max(arrayCopy))
+            arrayCopy.remove(min(arrayCopy))
 
-    else:  # array length is odd
-        while len(array) > 1:
-            array.remove(max(array))
-            array.remove(min(array))
+        return (arrayCopy[0] + arrayCopy[1]) / 2
 
-    return array[0]
+    else:  # arrayCopy length is odd
+        while len(arrayCopy) > 1:
+            arrayCopy.remove(max(arrayCopy))
+            arrayCopy.remove(min(arrayCopy))
+
+    return arrayCopy[0]
 
 
 lst = [rd.randint(1, 100) for i in range(rd.randint(5, 20))]
