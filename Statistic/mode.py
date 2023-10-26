@@ -43,6 +43,7 @@ def modeOfLst(array: list) -> float:
 
 
 lst = [rd.randint(1, 100) for x in range(rd.randint(5, 15))]
+print(f"List: {lst}\nLength: {len(lst)}.")
 
 if checkMode(lst):
     # result got by scipy method
