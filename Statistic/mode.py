@@ -47,13 +47,13 @@ print(f"List: {lst}\nLength: {len(lst)}.")
 
 if checkMode(lst):
     # result got by scipy method
-    print(f"Scipy median: {stats.mode(lst)}.")
+    print(f"Scipy mode: {stats.mode(lst)}.")
 
     # result by function
     print(f"List: {lst};\nLength: {len(lst)};\nMean: {modeOfLst(lst)}.")
 
 else:
     # result got by scipy method
-    print(f"Scipy median: {stats.mode(lst)}.")
+    print(f"Scipy mode: {stats.mode(lst)}.")
 
     print("There's no mode.")
