@@ -4,7 +4,7 @@ import random as rd
 from scipy import stats
 
 
-def checkMode(array):
+def checkMode(array: list) -> bool:
     countI = 0
 
     for i in array:
@@ -23,7 +23,7 @@ def checkMode(array):
         return True
 
 
-def modeOfLst(array):
+def modeOfLst(array: list) -> float:
     countI = 0
     modeNumber = 0
 

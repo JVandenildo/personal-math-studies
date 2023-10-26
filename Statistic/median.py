@@ -6,7 +6,7 @@ import random as rd
 import numpy as np
 
 
-def medianOfLst(array):
+def medianOfLst(array: list) -> float:
     if len(array) % 2 == 0:  # array length is even
         while len(array) > 2:
             array.remove(max(array))

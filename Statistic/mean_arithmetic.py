@@ -2,7 +2,7 @@ import random as rd
 import numpy as np
 
 
-def meanOfLst(array):
+def meanOfLst(array: list) -> float:
     sum = 0
     for i in array:
         sum = sum + i
