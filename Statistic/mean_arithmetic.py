@@ -11,6 +11,7 @@ def meanOfLst(array: list) -> float:
 
 
 lst = [rd.randint(1, 100) for x in range(rd.randint(5, 15))]
+print(f"List: {lst}\nLength: {len(lst)}.")
 
 # result got by numpy
 print(f"Numpy mean: {round(np.mean(lst), 2)}.")
