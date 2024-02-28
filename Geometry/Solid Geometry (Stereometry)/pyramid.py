@@ -7,6 +7,14 @@ class pyramid:
         self.baseSide = baseSide
         self.baseForm = baseForm
 
+    def area(self):
+        if self.baseForm == "square":
+            return 0
+        if self.baseForm == "circle":
+            return 0
+        else:
+            return 0
+
     def volume(self):
         if self.baseForm == "square":
             return round((self.height * (pow(self.baseSide, 2))) / 3, 2)
