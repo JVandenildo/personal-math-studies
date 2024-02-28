@@ -1,13 +1,13 @@
 class cube:
-    def __init__(self, verticeHeight: float):
+    def __init__(self, verticeHeight: float) -> None:
         self.verticeHeight = verticeHeight
 
-    def volume(self):
+    def volume(self) -> float:
         facesArea = self.verticeHeight**2
 
         return round(pow(facesArea, 3), 2)
 
-    def area(self):
+    def area(self) -> float:
         return 6 * (self.verticeHeight**2)
 
 

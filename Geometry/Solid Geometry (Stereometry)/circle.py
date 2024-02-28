@@ -2,16 +2,16 @@ from numpy import pi
 
 
 class circle:
-    def __init__(self, radius):
+    def __init__(self, radius) -> None:
         self.radius = radius
 
-    def diameter(self):
+    def diameter(self) -> float:
         return round(2 * self.radius, 2)
 
-    def area(self):
+    def area(self) -> float:
         return round(pi * (self.radius**2), 2)
 
-    def circumference(self):
+    def circumference(self) -> float:
         return round(2 * pi * self.radius, 2)
 
 

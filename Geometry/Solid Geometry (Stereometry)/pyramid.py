@@ -2,12 +2,12 @@ from numpy import pi
 
 
 class pyramid:
-    def __init__(self, height: float, baseSide: float, baseForm: str):
+    def __init__(self, height: float, baseSide: float, baseForm: str) -> None:
         self.height = height
         self.baseSide = baseSide
         self.baseForm = baseForm
 
-    def area(self):
+    def area(self) -> float:
         if self.baseForm == "square":
             return 0
         if self.baseForm == "circle":
@@ -15,7 +15,7 @@ class pyramid:
         else:
             return 0
 
-    def volume(self):
+    def volume(self) -> float:
         if self.baseForm == "square":
             return round((self.height * (pow(self.baseSide, 2))) / 3, 2)
 
