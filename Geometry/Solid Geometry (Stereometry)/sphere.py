@@ -8,10 +8,10 @@ class sphere:
     def volume(self):
         return round(pi * (self.radius**3) * (4 / 3), 2)
 
-    def area(self):
+    def surfaceArea(self):
         return round(4 * pi * (pow(self.radius, 2)), 2)
 
 
 NeoSphere = sphere(float(input("Radius: ")))
 
-print(f"Volume: {NeoSphere.volume()};\nSurface area: {NeoSphere.area()}.")
+print(f"Volume: {NeoSphere.volume()};\nSurface area: {NeoSphere.surfaceArea()}.")

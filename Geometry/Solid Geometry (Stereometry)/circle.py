@@ -8,8 +8,9 @@ class circle:
     def area(self):
         return round(pi * (self.radius**2), 2)
 
+    def diameter(self):
+        return round(pi * self.radius, 2)
+
 
 NeoCircle = circle(float(input("Radius: ")))
-print(
-    f"Area of a circle with {NeoCircle.radius} radius is {NeoCircle.area()} squared units."
-)
+print(f"Area: {NeoCircle.area()};\nDiameter: {NeoCircle.diameter()}.")
