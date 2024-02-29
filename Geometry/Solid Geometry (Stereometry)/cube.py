@@ -1,15 +1,24 @@
 class cube:
-    def __init__(self, verticeHeight: float) -> None:
-        self.verticeHeight = verticeHeight
+    def __init__(
+        self, heightVertice: float, baseVertice: float, deepVertice: float
+    ) -> None:
+        self.heightVertice = heightVertice
+        self.baseVertice = baseVertice
+        self.deepVertice = deepVertice
+
+    def surfaceArea(self) -> float:
+        return (
+            (2 * (self.baseVertice * self.heightVertice))
+            + (2 * (self.baseVertice * self.deepVertice))
+            + (2 * (self.heightVertice * self.deepVertice))
+        )
 
     def volume(self) -> float:
-        facesArea = self.verticeHeight**2
-
-        return round(pow(facesArea, 3), 2)
-
-    def area(self) -> float:
-        return 6 * (self.verticeHeight**2)
+        return round(self.baseVertice * self.heightVertice * self.deepVertice, 2)
 
 
-NeoCube = cube(float(input("Vertice height: ")))
-print(f"Volume: {NeoCube.volume()};\nArea of a face: {NeoCube.area()}.")
+NeoCube = cube(
+    float(input("Height length: ")),
+    float(input("Base length: "), float(input("Deep length: "))),
+)
+print(f"Surface area: {NeoCube.area()};\n;Volume: {NeoCube.volume()}.")
