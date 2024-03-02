@@ -17,8 +17,5 @@ class cube:
         return round(self.baseVertice * self.heightVertice * self.deepVertice, 2)
 
 
-NeoCube = cube(
-    float(input("Height length: ")),
-    float(input("Base length: "), float(input("Deep length: "))),
-)
-print(f"Surface area: {NeoCube.area()};\n;Volume: {NeoCube.volume()}.")
+NeoCube = cube(float(input("Height: ")), float(input("Base: ")), float(input("Deep: ")))
+print(f"Surface area: {NeoCube.surfaceArea()};\nVolume: {NeoCube.volume()}.")
