@@ -1,10 +1,13 @@
-# mode is the most repeating value ina set of data values
+# mode is the most repeating value in a set of data values
 
 import random as rd
 from scipy import stats
 
 
 def checkMode(array: list) -> bool:
+    """
+    Verify if there's a mode.
+    """
     countI = 0
 
     for i in array:
@@ -24,6 +27,9 @@ def checkMode(array: list) -> bool:
 
 
 def modeOfLst(array: list) -> float:
+    """
+    Return the mode's value.
+    """
     countI = 0
     modeNumber = 0
 
