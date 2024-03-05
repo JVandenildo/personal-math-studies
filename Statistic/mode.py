@@ -62,4 +62,5 @@ else:
     # result got by scipy method
     print(f"Scipy mode: {stats.mode(lst)}.")
 
+    # result by function
     print("There's no mode.")

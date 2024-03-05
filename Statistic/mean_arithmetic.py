@@ -16,4 +16,4 @@ print(f"List: {lst}\nLength: {len(lst)}.")
 # result got by numpy
 print(f"Numpy mean: {round(np.mean(lst), 2)}.")
 # result got by function
-print(f"List: {lst};\nLength: {len(lst)};\nMean: {meanOfLst(lst)}.")
+print(f"Mean: {meanOfLst(lst)}.")

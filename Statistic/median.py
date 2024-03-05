@@ -9,14 +9,14 @@ import numpy as np
 def medianOfLst(array: list) -> float:
     arrayCopy = array.copy()
 
-    if len(arrayCopy) % 2 == 0:  # arrayCopy length is even
+    if len(arrayCopy) % 2 == 0:  # array length is even
         while len(arrayCopy) > 2:
             arrayCopy.remove(max(arrayCopy))
             arrayCopy.remove(min(arrayCopy))
 
         return (arrayCopy[0] + arrayCopy[1]) / 2
 
-    else:  # arrayCopy length is odd
+    else:  # array length is odd
         while len(arrayCopy) > 1:
             arrayCopy.remove(max(arrayCopy))
             arrayCopy.remove(min(arrayCopy))
@@ -30,4 +30,4 @@ print(f"List: {lst}\nLength: {len(lst)}.")
 # result by numpy for comparison
 print(f"Numpy median: {np.median(lst)}.")
 # result by function
-print(f"My median: {medianOfLst(lst)}.")
+print(f"Median: {medianOfLst(lst)}.")
