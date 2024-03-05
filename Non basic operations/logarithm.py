@@ -1,11 +1,7 @@
-def logarithm(base, x):
-    # base raised by y is x
-    x = pow(base, y)
-
-    return y
+import numpy as np
 
 
-base = int(input("Base: "))
-x = int(input("Valor of x: "))
+base = 10
+x = 10
 
-print(f"The logarithm of {x} to base {base} is {logarithm(base, x)}.")
+print(f"{np.log10([2.71,10])}")

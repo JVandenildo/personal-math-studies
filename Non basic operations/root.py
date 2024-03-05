@@ -15,11 +15,9 @@ def root(base, b):
         r = r + 1
 
     if p == base and count == b:
-        answer = f"{r}"
+        return f"{r}"
     else:
-        answer = "a non integer"
-
-    return answer
+        return "a non integer"
 
 
 base = int(input("Base number: "))
