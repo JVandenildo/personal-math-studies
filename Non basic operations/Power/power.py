@@ -1,4 +1,4 @@
-def power(a, n):
+def power(a: int, n: int):
     count = 1
     p = a
 
@@ -10,7 +10,7 @@ def power(a, n):
 
 
 # recursive
-def powerRecursive(a, n):
+def powerRecursive(a: int, n: int):
     if n == 0:
         return 1
     else:

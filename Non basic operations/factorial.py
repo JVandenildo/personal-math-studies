@@ -1,4 +1,4 @@
-def factorial(number):
+def factorial(number: int) -> int:
     i = 1
     result = 1
 

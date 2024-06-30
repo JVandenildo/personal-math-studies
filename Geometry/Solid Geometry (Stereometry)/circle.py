@@ -2,7 +2,7 @@ from numpy import pi
 
 
 class circle:
-    def __init__(self, radius) -> None:
+    def __init__(self, radius: float) -> None:
         self.radius = radius
 
     def diameter(self) -> float:
