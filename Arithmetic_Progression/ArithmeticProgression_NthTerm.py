@@ -1,4 +1,4 @@
-def ArithmeticProgression(iTerm, fTerm, constant):
+def ArithmeticProgression(iTerm: float, fTerm: float, constant: float) -> list[float]:
     listTerms = []
 
     if constant < 1 and iTerm > fTerm:

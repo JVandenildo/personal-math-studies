@@ -1,5 +1,5 @@
 # have a sequence of n terms with arithmetic progression
-def ArithmeticProgression(n, term, constant):
+def ArithmeticProgression(n: int, term: float, constant: float) -> list[float]:
     listTerms = [term]
 
     while len(listTerms) < n:

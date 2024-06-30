@@ -2,7 +2,7 @@ import random as rd
 
 
 # function to generate list
-def ArithmeticProgression(n, term, constant):
+def ArithmeticProgression(n: int, term: float, constant: float) -> list[float]:
     listTerms = [term]
 
     while len(listTerms) < n:
@@ -13,7 +13,7 @@ def ArithmeticProgression(n, term, constant):
 
 
 # function to find sum
-def SumOfTerms(n, array):
+def SumOfTerms(n: int, array: list[float]):
     print(f"List: {array};\nLength: {len(array)}.")
 
     # sum = 0
