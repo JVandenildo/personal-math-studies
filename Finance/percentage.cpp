@@ -2,11 +2,14 @@
 
 int main()
 {
-    float initialPrice = 10;
-    float afterPrice = 15;
-    float PriceDiff = afterPrice - initialPrice;
+    double initialPrice, finalPrice;
+    std::cout << "Preço inicial: ";
+    std::cin >> initialPrice;
+    std::cout << "Preço final: ";
+    std::cin >> finalPrice;
+    double PriceDiff = finalPrice - initialPrice;
 
-    float percentage = (abs(initialPrice - afterPrice) / initialPrice) * 100;
+    double percentage = (abs(initialPrice - finalPrice) / initialPrice) * 100;
 
     if (PriceDiff > 0) // juros
     {
